@@ -1,0 +1,1179 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+
+    <title>MTR Academia</title>
+    <meta name="description" content="MTR">
+
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <meta name="keywords"
+        content="Treino, Academia, Saúde, Estética, Corpo, Mente, Monstro, Maromba, Bodybuilding, MTR, Rio do Sul, Maicon Trentini">
+
+    <!-- Links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel='stylesheet' href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css'>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap">
+    <link rel='stylesheet' href='assets/css/main.css'>
+
+    <!-- Links: Ícone -->
+    <link rel="shortcut icon" type="image/x-png" href="assets/img/logos/mtr-logo-2.png">
+</head>
+
+<body>
+    <!-- Loader -->
+    <div class="mtr-loader">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <div class="w3-top">
+        <!-- Navbar -->
+        <nav class="w3-bar mtr-flex mtr-flex-space" id="mtrNavbar">
+            <!-- Navbar: Logo -->
+            <a href="" class="w3-bar-item w3-button mtr-transition" id="mtrLogo">
+                <img src="assets/img/logos/mtr-logo.png" class="mtr-logo mtr-transition" alt="Logo" id="mtrImgLogo">
+            </a>
+            <div class="w3-bar-item w3-large mtr-transition" style="padding: 16px;" id="mtrSocial">
+                <a target="_blank" href="https://www.facebook.com/mtracademia">
+                    <i class='bx bxl-facebook-square bx-sm bx-tada-hover mtr-nav-icon'></i>
+                </a>
+                <a target="_blank" href="https://www.instagram.com/mtracademia">
+                    <i class='bx bxl-instagram bx-sm bx-tada-hover mtr-nav-icon'></i>
+                </a>
+                <a target="_blank" href="https://twitter.com/mtracademia">
+                    <i class='bx bxl-twitter bx-sm bx-tada-hover mtr-nav-icon'></i>
+                </a>
+                <a target="_blank"
+                    href="https://api.whatsapp.com/send?phone=5547991745629&text=Ol%C3%A1%2C%20sou%20visitante%20do%20website%3A%20www.mtracademia.com.br">
+                    <i class='bx bxl-whatsapp bx-sm bx-tada-hover mtr-nav-icon'></i>
+                </a>
+            </div>
+            <!-- Sidebar: Menu -->
+            <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right mtr-transition" id="mtrMenu"
+                onclick="MtrSidebar.open()">
+                <i class='bx bx-menu bx-md mtr-transition' id="mtrIconMenu"></i>
+            </a>
+        </nav>
+    </div>
+    <!-- Sidebar -->
+    <aside id="mtrSidebar" class="w3-sidebar w3-bar-block w3-card w3-animate-left mtr-sidebar mtr-bg-side">
+        <a href="javascript:void(0)" onclick="MtrSidebar.close()" class="w3-bar-item w3-button w3-large w3-padding-16">
+            <i class='bx bx-x bx-md bx-tada mtr-text-yellow'></i>
+        </a>
+        <a href="#sobre" onclick="MtrSidebar.close()" class="w3-bar-item w3-button">
+            <div class="mtr-flex mtr-flex-start">
+                <i class='bx bx-help-circle mtr-menu-icon'></i>
+                Sobre
+            </div>
+        </a>
+        <a href="#unidades" onclick="MtrSidebar.close()" class="w3-bar-item w3-button">
+            <div class="mtr-flex mtr-flex-start">
+                <i class='bx bxs-home mtr-menu-icon'></i>
+                Unidades
+            </div>
+        </a>
+        <a href="#nutricao" onclick="MtrSidebar.close()" class="w3-bar-item w3-button">
+            <div class="mtr-flex mtr-flex-start">
+                <i class='bx bx-restaurant mtr-menu-icon'></i>
+                Nutrição
+            </div>
+        </a>
+        <a href="#treino" onclick="MtrSidebar.close()" class="w3-bar-item w3-button">
+            <div class="mtr-flex mtr-flex-start">
+                <i class='bx bx-dumbbell mtr-menu-icon'></i>
+                Treinamento
+            </div>
+        </a>
+        <a href="#equipe" onclick="MtrSidebar.close()" class="w3-bar-item w3-button">
+            <div class="mtr-flex mtr-flex-start">
+                <i class='bx bxs-group mtr-menu-icon'></i>
+                Equipe
+            </div>
+        </a>
+        <a href="#depoimentos" onclick="MtrSidebar.close()" class="w3-bar-item w3-button">
+            <div class="mtr-flex mtr-flex-start">
+                <i class='bx bxs-star-half mtr-menu-icon'></i>
+                Depoimentos
+            </div>
+        </a>
+        <a href="#planos" onclick="MtrSidebar.close()" class="w3-bar-item w3-button">
+            <div class="mtr-flex mtr-flex-start">
+                <i class='bx bx-dollar-circle mtr-menu-icon'></i>
+                Planos
+            </div>
+        </a>
+    </aside>
+    <!-- Overlay -->
+    <div class="w3-overlay w3-animate-opacity" onclick="MtrSidebar.close()" style="cursor:pointer; height: 100vh;"
+        id="mtrOverlay">
+    </div>
+    <!-- Header -->
+    <header class="w3-container mtr-bg-header" id="home">
+        <!-- Header: Desktop -->
+        <div class="w3-display-left w3-row-padding w3-padding w3-padding-64 w3-hide-small">
+            <div class="w3-auto" style="margin-left: 64px;">
+                <span class="w3-jumbo mtr-text-yellow mtr-font-titulo-banner">
+                    <span class="w3-xxxlarge">
+                        TREINO
+                    </span>
+                    <span class="w3-xxlarge">
+                        DE
+                    </span>
+                    <br>
+                    MONSTRO!
+                </span>
+                <br>
+                <h5>
+                    Uma academia fora dos padrões,
+                    <br>
+                    e com espírito de campeão.
+                </h5>
+                <p>
+                    <a href="#sobre" class="w3-button mtr-orange-light w3-padding-large w3-large w3-margin-top">Saiba
+                        mais e
+                        matricule-se
+                    </a>
+                </p>
+            </div>
+        </div>
+        <!-- Header: Mobile -->
+        <div class="w3-display-middle w3-hide-large w3-hide-medium mtr-banner-mobile">
+            <span class="w3-xxxlarge mtr-text-yellow mtr-font-titulo-banner">
+                <span class="w3-xxlarge">
+                    TREINO
+                </span>
+                <span class="w3-xlarge">
+                    DE
+                </span>
+                MONSTRO!
+            </span>
+            <h5>
+                Uma academia fora dos padrões,
+                <br>
+                e com espírito de campeão.
+            </h5>
+            <p>
+                <a href="#sobre" class="w3-button mtr-orange-light w3-padding-large w3-large w3-margin-top"
+                    style="width: 100%;">
+                    <span>Saiba
+                        mais e matricule-se
+                    </span>
+                </a>
+            </p>
+        </div>
+    </header>
+    <div style="position: relative;">
+        <svg class="mtr-bg-header-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 100">
+            <path fill="var(--mtr-color-purple)" fill-opacity="1" d="M0,96L1440,0L1440,100L0,100Z"></path>
+        </svg>
+    </div>
+    <div class="mtr-content">
+        <!-- Section: Sobre -->
+        <section id="sobre">
+            <!-- Section: Sobre - Parte 1 -->
+            <div class="w3-container mtr-bg mtr-bg-primary-main">
+                <div class="w3-row-padding w3-padding w3-padding-64">
+                    <div class="w3-auto mtr-flex mtr-flex-space">
+                        <div class="w3-half">
+                            <h3 class="mtr-flex mtr-flex-start mtr-font-titulo mtr-text-yellow w3-xxlarge">
+                                Quem somos
+                            </h3>
+                            <h6 class="w3-padding-16">Somos uma academia fora dos padrões, voltada para o público
+                                maromba e
+                                com o bodybuilding correndo nas veias. Começamos nossa trajetória em 2018, com um único
+                                objetivo em mente, criar uma estrutura para os verdadeiros amantes da musculação.
+                            </h6>
+                        </div>
+                        <div class="w3-half w3-center">
+                            <img src="assets/img/remove-bg/mtr-3anos.png" alt="3 anos de MTR"
+                                class="w3-image mtr-reflexo">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="w3-container mtr-bg-striped">
+        </div>
+        <!-- Section: Unidades -->
+        <section id="unidades">
+            <!-- Section: Unidades - Parte 1 -->
+            <div class="w3-container mtr-bg mtr-bg-primary">
+                <div class="w3-row-padding w3-padding w3-padding-32">
+                    <div class="swiper mtr-swiper-gallery">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <a href="assets/img/galeria/IMG_0888.jpg" class="fancybox" data-fancybox="gallery">
+                                    <img src="assets/img/galeria/IMG_0888.jpg" class="w3-card-4 w3-round-large">
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="assets/img/galeria/IMG_2452.jpg" class="fancybox" data-fancybox="gallery">
+                                    <img src="assets/img/galeria/IMG_2452.jpg" class="w3-card-4 w3-round-large">
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="assets/img/galeria/IMG_2456.jpg" class="fancybox" data-fancybox="gallery">
+                                    <img src="assets/img/galeria/IMG_2456.jpg" class="w3-card-4 w3-round-large">
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="assets/img/galeria/IMG_0684.jpg" class="fancybox" data-fancybox="gallery">
+                                    <img src="assets/img/galeria/IMG_0684.jpg" class="w3-card-4 w3-round-large">
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="assets/img/galeria/IMG_2467.jpg" class="fancybox" data-fancybox="gallery">
+                                    <img src="assets/img/galeria/IMG_2467.jpg" class="w3-card-4 w3-round-large">
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="assets/img/galeria/IMG_2465.jpg" class="fancybox" data-fancybox="gallery">
+                                    <img src="assets/img/galeria/IMG_2465.jpg" class="w3-card-4 w3-round-large">
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="assets/img/galeria/IMG_0721.jpg" class="fancybox" data-fancybox="gallery">
+                                    <img src="assets/img/galeria/IMG_0721.jpg" class="w3-card-4 w3-round-large">
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="assets/img/galeria/IMG_2443.jpg" class="fancybox" data-fancybox="gallery">
+                                    <img src="assets/img/galeria/IMG_2443.jpg" class="w3-card-4 w3-round-large">
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="assets/img/galeria/IMG_2446.jpg" class="fancybox" data-fancybox="gallery">
+                                    <img src="assets/img/galeria/IMG_2446.jpg" class="w3-card-4 w3-round-large">
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="assets/img/galeria/IMG_1076.jpg" class="fancybox" data-fancybox="gallery">
+                                    <img src="assets/img/galeria/IMG_1076.jpg" class="w3-card-4 w3-round-large">
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="assets/img/galeria/IMG_2460.jpg" class="fancybox" data-fancybox="gallery">
+                                    <img src="assets/img/galeria/IMG_2460.jpg" class="w3-card-4 w3-round-large">
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="assets/img/galeria/IMG_2498.jpg" class="fancybox" data-fancybox="gallery">
+                                    <img src="assets/img/galeria/IMG_2498.jpg" class="w3-card-4 w3-round-large">
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="assets/img/galeria/IMG_0753.jpg" class="fancybox" data-fancybox="gallery">
+                                    <img src="assets/img/galeria/IMG_0753.jpg" class="w3-card-4 w3-round-large">
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="assets/img/galeria/IMG_2509.jpg" class="fancybox" data-fancybox="gallery">
+                                    <img src="assets/img/galeria/IMG_2509.jpg" class="w3-card-4 w3-round-large">
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="assets/img/galeria/IMG_2513.jpg" class="fancybox" data-fancybox="gallery">
+                                    <img src="assets/img/galeria/IMG_2513.jpg" class="w3-card-4 w3-round-large">
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="assets/img/galeria/IMG_0947.jpg" class="fancybox" data-fancybox="gallery">
+                                    <img src="assets/img/galeria/IMG_0947.jpg" class="w3-card-4 w3-round-large">
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="assets/img/galeria/IMG_2489.jpg" class="fancybox" data-fancybox="gallery">
+                                    <img src="assets/img/galeria/IMG_2489.jpg" class="w3-card-4 w3-round-large">
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="assets/img/galeria/IMG_2478.jpg" class="fancybox" data-fancybox="gallery">
+                                    <img src="assets/img/galeria/IMG_2478.jpg" class="w3-card-4 w3-round-large">
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="assets/img/galeria/IMG_2568.jpg" class="fancybox" data-fancybox="gallery">
+                                    <img src="assets/img/galeria/IMG_2568.jpg" class="w3-card-4 w3-round-large">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+                <div class="w3-row-padding w3-padding w3-padding-32">
+                    <div class="w3-auto mtr-flex mtr-flex-space">
+                        <div class="w3-half">
+                            <h3 class="mtr-flex mtr-flex-start mtr-font-titulo mtr-text-yellow w3-xxlarge">
+                                Unidade Centro
+                            </h3>
+                            <h6 class="w3-padding-16">Uma estrutura completa pra quem gosta de treinar de verdade, sem
+                                frescura, sem aparelhos
+                                modernos, somente pura brutalidade. Você vai se supreender com a energia dessa casa,
+                                simplesmente não vai mais querer treinar em outro lugar.
+                            </h6>
+                        </div>
+                        <div class="w3-half mtr-flex">
+                            <p>
+                                <a data-fancybox-trigger="gallery" href="javascript:void(0)"
+                                    class="w3-button mtr-orange-light mtr-flex w3-margin-top">
+                                    Abrir galeria
+                                    <i class='bx bx-camera bx-xs bx-flashing w3-padding'></i>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Section: Unidades - Parte 2 -->
+            <div class="w3-container mtr-bg mtr-bg-secondary">
+                <div class="w3-row-padding w3-padding w3-padding-32">
+                    <div class="w3-auto mtr-flex">
+                        <div class="swiper mtr-swiper-purecounter">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide mtr-auto">
+                                    <div class="w3-padding-16 w3-center">
+                                        <i class='bx bxs-user bx-lg mtr-text-orange-light mtr-flex'></i>
+                                        <h5 class="mtr-text-orange-light mtr-font-titulo">Alunos</h5>
+                                        <h1 class="mtr-font-titulo w3-xxlarge">
+                                            <span class="purecounter" data-purecounter-start="0"
+                                                data-purecounter-end="500" data-purecounter-delay="5">
+                                                500
+                                            </span>+
+                                        </h1>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide mtr-auto">
+                                    <div class="w3-padding-16 w3-center">
+                                        <i class='bx bx-dumbbell bx-lg mtr-text-orange-light mtr-flex'></i>
+                                        <h5 class="mtr-text-orange-light mtr-font-titulo">Halteres</h5>
+                                        <h1 class="mtr-font-titulo w3-xxlarge">
+                                            <span class="purecounter" data-purecounter-start="0"
+                                                data-purecounter-end="100" data-purecounter-delay="5">
+                                                100
+                                            </span>+
+                                        </h1>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide mtr-auto">
+                                    <div class="w3-padding-16 w3-center">
+                                        <i class='bx bxs-vector bx-lg mtr-text-orange-light mtr-flex'></i>
+                                        <h5 class="mtr-text-orange-light mtr-font-titulo">Aparelhos</h5>
+                                        <h1 class="mtr-font-titulo w3-xxlarge">
+                                            <span class="purecounter" data-purecounter-start="0"
+                                                data-purecounter-end="80" data-purecounter-delay="5">
+                                                80
+                                            </span>+
+                                        </h1>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next mtr-swiper-purecounter-next"></div>
+                    <div class="swiper-button-prev mtr-swiper-purecounter-prev"></div>
+                </div>
+            </div>
+        </section>
+        <!-- Section: Nutrição -->
+        <section id="nutricao">
+            <div class="w3-container mtr-bg mtr-bg-primary">
+                <div class="w3-row-padding w3-padding w3-padding-32">
+                    <div class="w3-auto mtr-flex mtr-flex-space">
+                        <div class="w3-half w3-center w3-padding">
+                            <img src="assets/img/remove-bg/mtr-shaker.png" alt="Pré Treino"
+                                class="w3-image mtr-reflexo">
+                        </div>
+                        <div class="w3-half">
+                            <h3 class="mtr-flex mtr-flex-start mtr-font-titulo mtr-text-yellow w3-xxlarge">
+                                Pré Treino
+                            </h3>
+                            <h6 class="w3-padding-16">
+                                <i class='bx bxs-quote-left bx-sm'></i> "Caso a refeição for feita pouco tempo antes do
+                                treino, deverá ser mais leve, afim de evitar desconfortos durante a prática do
+                                exercício. Dê prefência para alimentos que sejam fonte de carboidratos, proteínas e
+                                gordura, garantindo a energia necessária para o treino. Algumas opções interessantes
+                                são: Batata doce, grãos integrais, mandioca, banana, ovos, peixes, carne vermelha e
+                                proteínas vegetais. Lembrando que, praticar exercícios em jejum aumenta as chances de
+                                hipoglicemia."
+                            </h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="w3-row-padding w3-padding w3-padding-32">
+                    <div class="w3-auto mtr-flex mtr-flex-space">
+                        <div class="w3-half">
+                            <h3 class="mtr-flex mtr-flex-start mtr-font-titulo mtr-text-yellow w3-xxlarge">
+                                Pós Treino
+                            </h3>
+                            <h6 class="w3-padding-16">
+                                <i class='bx bxs-quote-left bx-sm'></i> "A alimentação pós treino é de extrema
+                                importância, pois evita a perda muscular e promove a recuperação através da
+                                síntese proteica. Recomenda-se fazer essa refeição em até 45 minutos após o treino e que
+                                seja rica em proteínas. Algumas opções interessantes são: Peito de frango, peixes,
+                                queijo, ovos, iogurte, mandioca, macarrão ou pão integral, batata doce e frutas. Além
+                                disso, fazer a utilização de suplementos alimentares como o whey protein e a creatina,
+                                logo após o treino pode favorecer o ganho de massa e o desempenho físico."
+                            </h6>
+                        </div>
+                        <div class="w3-half w3-center w3-padding">
+                            <img src="assets/img/remove-bg/mtr-food.png" alt="Pós Treino" class="w3-image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="w3-container mtr-bg mtr-bg-secondary">
+                <div class="w3-row-padding w3-padding w3-padding-16">
+                    <div class="w3-auto mtr-flex mtr-flex-space">
+                        <div class="w3-third w3-padding w3-center">
+                            <img src="assets/img/perfil/mtr-testoni.png" alt="Lucas Testoni" class="w3-image w3-circle">
+                        </div>
+                        <div class="w3-third w3-padding-16">
+                            <h5 class="mtr-text-orange-light mtr-font-titulo">Lucas Testoni</h5>
+                            <p class="w3-opacity">
+                                Nutricionista
+                            </p>
+                            <p class="w3-padding-16">
+                                Quer mais dicas como essas?
+                                <br>
+                                Siga o nutri monstro nas redes sociais.
+                            </p>
+                        </div>
+                        <div class="w3-third w3-padding-16 w3-center">
+                            <a target="_blank" href="https://www.facebook.com/">
+                                <i class='bx bxl-facebook-square bx-sm bx-tada-hover'></i>
+                            </a>
+                            <a target="_blank" href="https://www.instagram.com/lucas_testoni">
+                                <i class='bx bxl-instagram bx-sm bx-tada-hover'></i>
+                            </a>
+                            <a target="_blank" href="https://twitter.com/">
+                                <i class='bx bxl-twitter bx-sm bx-tada-hover'></i>
+                            </a>
+                            <a target="_blank"
+                                href="https://api.whatsapp.com/send?phone=5547989147740&text=Ol%C3%A1%2C%20sou%20visitante%20do%20website%3A%20www.mtracademia.com.br">
+                                <i class='bx bxl-whatsapp bx-sm bx-tada-hover'></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Section: Treino -->
+        <section id="treino">
+            <div class="w3-container mtr-bg mtr-bg-primary">
+                <div class="w3-row-padding w3-padding w3-padding-32">
+                    <div class="w3-auto mtr-flex mtr-flex-space">
+                        <div class="w3-half">
+                            <h3 class="mtr-flex mtr-flex-start mtr-font-titulo mtr-text-yellow w3-xxlarge">
+                                Hipertrofia
+                            </h3>
+                            <h6 class="w3-padding-16">
+                                <i class='bx bxs-quote-left bx-sm'></i> "Técnica + Carga + Amplitude de movimento, as
+                                três variáveis para a hipertrofia. Tenha
+                                uma
+                                boa técnica, dê a carga adequada para seus músculos e realize os exercícios em boa
+                                amplitude. E aqui vai uma das vertentes mais importantes, faça progressão de carga nos
+                                exercícios semanalmente. Utilize das anilhas menores para isso, dessa forma você sempre
+                                estará em constante evolução. Não é regra, mas uma faixa adequada de repetições para
+                                isso fica em torno de 8 à 12."
+                            </h6>
+                        </div>
+                        <div class="w3-half w3-center w3-padding">
+                            <img src="assets/img/remove-bg/mtr-hipertrofia.png" alt="Hipertrofia"
+                                class="w3-image mtr-reflexo">
+                        </div>
+                    </div>
+                </div>
+                <div class="w3-row-padding w3-padding w3-padding-32">
+                    <div class="w3-auto mtr-flex mtr-flex-space">
+                        <div class="w3-half w3-center w3-padding">
+                            <img src="assets/img/remove-bg/mtr-emagrecimento.png" alt="Emagrecimento"
+                                class="w3-image mtr-reflexo">
+                        </div>
+                        <div class="w3-half">
+                            <h3 class="mtr-flex mtr-flex-start mtr-font-titulo mtr-text-yellow w3-xxlarge">
+                                Emagrecimento
+                            </h3>
+                            <h6 class="w3-padding-16">
+                                <i class='bx bxs-quote-left bx-sm'></i> "Um dos maiores erros é focar somente no
+                                aeróbico. Isso faz com que você emagreça de
+                                forma flácida. Foque primeiramente na musculação, treinar de forma intensa e com cargas
+                                adequadas, que demandam um gasto calórico maior. A musculação aumenta seu metabolismo de
+                                repousou (gasto calórico parado) e diversos fatores hormonais que contribuem para o
+                                emagrecimento. E segundo, adicione o exercício aeróbio de sua preferência, ele irá
+                                auxiliar na diminuição da retenção hídrica e na utilização da gordura como fonte de
+                                energia."
+                            </h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="w3-container mtr-bg mtr-bg-secondary">
+                <div class="w3-row-padding w3-padding w3-padding-16">
+                    <div class="w3-auto mtr-flex mtr-flex-space">
+                        <div class="w3-third w3-padding-16">
+                            <h5 class="mtr-text-orange-light mtr-font-titulo">Ruan "Bolacha"</h5>
+                            <p class="w3-opacity">Fisiculturista</p>
+                            <p class="w3-padding-16">
+                                Quer mais dicas como essas?
+                                <br>
+                                Siga esse monstro nas redes sociais.
+                            </p>
+                        </div>
+                        <div class="w3-third w3-padding-16 w3-center">
+                            <a target="_blank" href="https://www.facebook.com/bolachinha8">
+                                <i class='bx bxl-facebook-square bx-sm bx-tada-hover'></i>
+                            </a>
+                            <a target="_blank" href="https://www.instagram.com/ruan_bolacha">
+                                <i class='bx bxl-instagram bx-sm bx-tada-hover'></i>
+                            </a>
+                            <a target="_blank" href="https://twitter.com/">
+                                <i class='bx bxl-twitter bx-sm bx-tada-hover'></i>
+                            </a>
+                            <a target="_blank"
+                                href="https://api.whatsapp.com/send?phone=5547988624420&text=Ol%C3%A1%2C%20sou%20visitante%20do%20website%3A%20www.mtracademia.com.br">
+                                <i class='bx bxl-whatsapp bx-sm bx-tada-hover'></i>
+                            </a>
+                        </div>
+                        <div class="w3-third w3-padding w3-center">
+                            <img src="assets/img/perfil/ruan-bolacha.png" alt="Ruan Bolacha" class="w3-image w3-circle">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Section: Equipe -->
+        <section id="equipe">
+            <div class="w3-container mtr-bg mtr-bg-primary">
+                <div class="w3-row-padding w3-padding w3-padding-32">
+                    <div class="w3-auto mtr-flex mtr-flex-space">
+                        <div class="w3-half">
+                            <h3 class="mtr-flex mtr-flex-start mtr-font-titulo mtr-text-yellow w3-xxlarge">
+                                Equipe
+                            </h3>
+                            <h6 class="w3-padding-16">
+                                Temos uma equipe motivada e muito bem preparada para te auxiliar em qual seja o seu
+                                objetivo: Hipertrofia, Emagrecimento, Saúde ou Resistência.
+                            </h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="w3-row-padding w3-padding">
+                    <div class="w3-auto">
+                        <div class="swiper mtr-swiper-equipe">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide mtr-auto w3-padding-64">
+                                    <div class="w3-padding-32">
+                                        <div class="w3-card-4 mtr-card-effect" style="margin: 4px;">
+                                            <div class="mtr-bg-tertiary mtr-flex">
+                                                <img src="assets/img/equipe/mtr-gabriel.jpg" alt="Gabriel"
+                                                    class="w3-image w3-hover-greyscale w3-circle mtr-card-img w3-padding-large">
+                                            </div>
+                                            <div class="w3-container mtr-bg-secondary">
+                                                <h5
+                                                    class="mtr-text-orange-light mtr-font-titulo w3-margin-top w3-center">
+                                                    Gabriel Feldmann
+                                                </h5>
+                                                <p class="w3-opacity w3-center">Instrutor</p>
+                                                <div class="mtr-card-text">
+                                                    <p class="w3-padding-16">
+                                                        Futuro Bacharel em Educação Física. É nosso instrutor mais
+                                                        experiente, está
+                                                        conosco desde o começo. Você pode encontrá-lo na academia
+                                                        no período vespertino.
+                                                    </p>
+                                                </div>
+                                                <hr class="w3-opacity">
+                                                <div class="w3-center w3-margin-bottom">
+                                                    <a target="_blank"
+                                                        href="https://www.facebook.com/gabriel.feldmann.9">
+                                                        <i class='bx bxl-facebook-square bx-sm bx-tada-hover'></i>
+                                                    </a>
+                                                    <a target="_blank"
+                                                        href="https://www.instagram.com/gabriel.feldmann.9">
+                                                        <i class='bx bxl-instagram bx-sm bx-tada-hover'></i>
+                                                    </a>
+                                                    <a target="_blank" href="https://twitter.com/">
+                                                        <i class='bx bxl-twitter bx-sm bx-tada-hover'></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide mtr-auto w3-padding-64">
+                                    <div class="w3-padding-32">
+                                        <div class="w3-card-4 mtr-card-effect" style="margin: 4px;">
+                                            <div class="mtr-bg-tertiary mtr-flex">
+                                                <img src="assets/img/equipe/mtr-ruan.jpg" alt="Ruan"
+                                                    class="w3-image w3-hover-greyscale w3-circle mtr-card-img w3-padding-large">
+                                            </div>
+                                            <div class="w3-container mtr-bg-secondary">
+                                                <h5
+                                                    class="mtr-text-orange-light mtr-font-titulo w3-margin-top w3-center">
+                                                    Ruan Batschauer
+                                                </h5>
+                                                <p class="w3-opacity w3-center">Instrutor</p>
+                                                <div class="mtr-card-text">
+                                                    <p class="w3-padding-16">
+                                                        Fisiculturista. Amante da musculação. Possui um amplo
+                                                        conhecimento
+                                                        em
+                                                        técnicas de treinamento. Você pode encontrá-lo na academia
+                                                        no período noturno.
+                                                    </p>
+                                                </div>
+                                                <hr class="w3-opacity">
+                                                <div class="w3-center w3-margin-bottom">
+                                                    <a target="_blank" href="https://www.facebook.com/bolachinha8">
+                                                        <i class='bx bxl-facebook-square bx-sm bx-tada-hover'></i>
+                                                    </a>
+                                                    <a target="_blank" href="https://www.instagram.com/ruan_bolacha">
+                                                        <i class='bx bxl-instagram bx-sm bx-tada-hover'></i>
+                                                    </a>
+                                                    <a target="_blank" href="https://twitter.com/">
+                                                        <i class='bx bxl-twitter bx-sm bx-tada-hover'></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide mtr-auto w3-padding-64">
+                                    <div class="w3-padding-32">
+                                        <div class="w3-card-4 mtr-card-effect" style="margin: 4px;">
+                                            <div class="mtr-bg-tertiary mtr-flex">
+                                                <img src="assets/img/equipe/mtr-dani.jpg" alt="Danieli"
+                                                    class="w3-image w3-hover-greyscale w3-circle mtr-card-img w3-padding-large">
+                                            </div>
+                                            <div class="w3-container mtr-bg-secondary">
+                                                <h5
+                                                    class="mtr-text-orange-light mtr-font-titulo w3-margin-top w3-center">
+                                                    Danieli Hedler
+                                                </h5>
+                                                <p class="w3-opacity w3-center">Instrutora</p>
+                                                <div class="mtr-card-text">
+                                                    <p class="w3-padding-16">
+                                                        Praticante de Crossfit. Encontrou no espote uma paixão pela
+                                                        atividade
+                                                        física, principalmente musculação. Você pode encontra-lá na
+                                                        academia
+                                                        no
+                                                        período matutino.
+                                                    </p>
+                                                </div>
+                                                <hr class="w3-opacity">
+                                                <div class="w3-center w3-margin-bottom">
+                                                    <a target="_blank" href="https://www.facebook.com/daany.hedler">
+                                                        <i class='bx bxl-facebook-square bx-sm bx-tada-hover'></i>
+                                                    </a>
+                                                    <a target="_blank" href="https://www.instagram.com/dani_hedler">
+                                                        <i class='bx bxl-instagram bx-sm bx-tada-hover'></i>
+                                                    </a>
+                                                    <a target="_blank" href="https://twitter.com/">
+                                                        <i class='bx bxl-twitter bx-sm bx-tada-hover'></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide mtr-auto w3-padding-64">
+                                    <div class="w3-padding-32">
+                                        <div class="w3-card-4 mtr-card-effect" style="margin: 4px;">
+                                            <div class="mtr-bg-tertiary mtr-flex">
+                                                <img src="assets/img/equipe/mtr-cleison.jpg" alt="Cleison"
+                                                    class="w3-image w3-hover-greyscale w3-circle mtr-card-img w3-padding-large">
+                                            </div>
+                                            <div class="w3-container mtr-bg-secondary">
+                                                <h5
+                                                    class="mtr-text-orange-light mtr-font-titulo w3-margin-top w3-center">
+                                                    Cleison Salvador
+                                                </h5>
+                                                <p class="w3-opacity w3-center">Instrutor</p>
+                                                <div class="mtr-card-text">
+                                                    <p class="w3-padding-16">
+                                                        Atleta OCR e fundador da equipe: Esquadrão Adventure.
+                                                        Especialista
+                                                        em
+                                                        treinos de resistência. Você pode encontrá-lo na academia
+                                                        no período vespertino.
+                                                    </p>
+                                                </div>
+                                                <hr class="w3-opacity">
+                                                <div class="w3-center w3-margin-bottom">
+                                                    <a target="_blank"
+                                                        href="https://www.facebook.com/CleisonHeadbanger">
+                                                        <i class='bx bxl-facebook-square bx-sm bx-tada-hover'></i>
+                                                    </a>
+                                                    <a target="_blank" href="https://www.instagram.com/cleison_86">
+                                                        <i class='bx bxl-instagram bx-sm bx-tada-hover'></i>
+                                                    </a>
+                                                    <a target="_blank" href="https://twitter.com/">
+                                                        <i class='bx bxl-twitter bx-sm bx-tada-hover'></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide mtr-auto w3-padding-64">
+                                    <div class="w3-padding-32">
+                                        <div class="w3-card-4 mtr-card-effect" style="margin: 4px;">
+                                            <div class="mtr-bg-tertiary mtr-flex">
+                                                <img src="assets/img/equipe/mtr-pietra.jpg" alt="Pietra"
+                                                    class="w3-image w3-hover-greyscale w3-circle mtr-card-img w3-padding-large">
+                                            </div>
+                                            <div class="w3-container mtr-bg-secondary">
+                                                <h5
+                                                    class="mtr-text-orange-light mtr-font-titulo w3-margin-top w3-center">
+                                                    Pietra Pinheiro
+                                                </h5>
+                                                <p class="w3-opacity w3-center">Atendente</p>
+                                                <div class="mtr-card-text">
+                                                    <p class="w3-padding-16">
+                                                        Fluente em inglês. Possui uma grande capacidade em se comunicar.
+                                                        Encontrou na musculação um estilo de vida. Você pode encontrá-la
+                                                        na academia
+                                                        no período noturno.
+                                                    </p>
+                                                </div>
+                                                <hr class="w3-opacity">
+                                                <div class="w3-center w3-margin-bottom">
+                                                    <a target="_blank" href="https://www.facebook.com/">
+                                                        <i class='bx bxl-facebook-square bx-sm bx-tada-hover'></i>
+                                                    </a>
+                                                    <a target="_blank" href="https://www.instagram.com/pie.pinheiro">
+                                                        <i class='bx bxl-instagram bx-sm bx-tada-hover'></i>
+                                                    </a>
+                                                    <a target="_blank" href="https://twitter.com/">
+                                                        <i class='bx bxl-twitter bx-sm bx-tada-hover'></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next mtr-swiper-equipe-next"></div>
+                    <div class="swiper-button-prev mtr-swiper-equipe-prev"></div>
+                </div>
+            </div>
+            <div class="w3-container mtr-bg mtr-bg-primary-main">
+                <div class="w3-row-padding w3-padding w3-padding-64">
+                    <div class="w3-auto mtr-flex mtr-flex-space">
+                        <div class="w3-half w3-padding w3-center">
+                            <img src="assets/img/perfil/mtr-maicon-trentini.jpg" alt="Maicon Trentini"
+                                class="w3-image w3-card-4 w3-round-large">
+                        </div>
+                        <div class="w3-half w3-padding-16">
+                            <div class="w3-padding-16 w3-center">
+                                <h5 class="mtr-text-orange-light mtr-font-titulo">
+                                    Maicon Trentini
+                                </h5>
+                                <p class="w3-opacity">
+                                    CEO da empresa
+                                </p>
+                                <p class="w3-opacity">
+                                    Personal Trainer & Fisiculturista
+                                </p>
+                                <h6 class="w3-padding-16" style="text-align: left;">
+                                    <i class='bx bxs-quote-left bx-sm'></i> "Sou natural de Rio do Oeste/SC e Bacharel
+                                    em Educação Física. Trabalhei como personal
+                                    trainer em diversas academias renomadas. Possuo uma história maravilhosa no
+                                    fisiculturismo e decidi unir minha experiência profissional e no esporte, para
+                                    fundar
+                                    a Mtr Academia, com o objetivo de levar os benefícios da musculação para o maior
+                                    número de pessoas possível."
+                                </h6>
+                            </div>
+                            <div class="w3-center w3-margin-bottom">
+                                <a target="_blank" href="https://www.facebook.com/maiconandre.trentini">
+                                    <i class='bx bxl-facebook-square bx-sm bx-tada-hover'></i>
+                                </a>
+                                <a target="_blank" href="https://www.instagram.com/maicontrentinipersonal">
+                                    <i class='bx bxl-instagram bx-sm bx-tada-hover'></i>
+                                </a>
+                                <a target="_blank"
+                                    href="https://api.whatsapp.com/send?phone=5547991351960&text=Ol%C3%A1%2C%20sou%20visitante%20do%20website%3A%20www.mtracademia.com.br">
+                                    <i class='bx bxl-whatsapp bx-sm bx-tada-hover'></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Section: Depoimentos -->
+        <section id="depoimentos">
+            <div class="w3-container mtr-bg mtr-bg-primary">
+                <div class="w3-row-padding w3-padding w3-padding-64">
+                    <div class="w3-auto">
+                        <div class="swiper mtr-swiper-depoimentos">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide mtr-auto w3-padding-16">
+                                    <div class="w3-padding-32">
+                                        <div class="w3-card-4 mtr-card-effect" style="margin: 4px;">
+                                            <div class="mtr-bg-tertiary mtr-flex">
+                                                <img src="assets/img/perfil/mtr-juh.png" alt="Juh"
+                                                    class="w3-image w3-circle w3-padding-large w3-hover-greyscale mtr-card-img-mini">
+                                            </div>
+                                            <div class="w3-container mtr-bg-secondary">
+                                                <h5
+                                                    class="mtr-text-orange-light mtr-font-titulo w3-margin-top w3-center">
+                                                    Juliana
+                                                    Taise
+                                                </h5>
+                                                <p class="w3-opacity w3-center">Aluna</p>
+                                                <div class="mtr-card-text-mini">
+                                                    <p class="w3-padding-16">
+                                                        "Ao subir as escadas da academia fui surpreendida com a
+                                                        receptividade das
+                                                        pessoas que ali estavam, algo que sempre me chama a atenção por
+                                                        onde
+                                                        quer
+                                                        que eu vá, pois onde somos bem recebidos queremos sempre voltar.
+                                                        ...Costumo
+                                                        dizer que ao subir as escadas da academia subi também em outras
+                                                        áreas da
+                                                        minha vida (corpo e mente em harmonia!)."
+                                                    </p>
+                                                </div>
+                                                <div class="w3-center w3-margin-bottom w3-margin-top">
+                                                    <i class='bx bxs-star mtr-text-yellow'></i>
+                                                    <i class='bx bxs-star mtr-text-yellow'></i>
+                                                    <i class='bx bxs-star mtr-text-yellow'></i>
+                                                    <i class='bx bxs-star mtr-text-yellow'></i>
+                                                    <i class='bx bxs-star mtr-text-yellow'></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide mtr-auto w3-padding-16">
+                                    <div class="w3-padding-32">
+                                        <div class="w3-card-4 mtr-card-effect" style="margin: 4px;">
+                                            <div class="mtr-bg-tertiary mtr-flex">
+                                                <img src="assets/img/perfil/mtr-andre.png" alt="André"
+                                                    class="w3-image w3-circle w3-padding-large w3-hover-greyscale mtr-card-img-mini">
+                                            </div>
+                                            <div class="w3-container mtr-bg-secondary">
+                                                <h5
+                                                    class="mtr-text-orange-light mtr-font-titulo w3-margin-top w3-center">
+                                                    André
+                                                    Fernands
+                                                </h5>
+                                                <p class="w3-opacity w3-center">Aluno</p>
+                                                <div class="mtr-card-text-mini">
+                                                    <p class="w3-padding-16">
+                                                        "Sempre procurei um lugar para treinar onde pudesse alcançar
+                                                        meus
+                                                        objetivos
+                                                        e depois de alcançados, encontrasse motivação para continuar
+                                                        treinando. E
+                                                        foi aqui que encontrei! Com excelente atendimento, métodos de
+                                                        treinamento
+                                                        atualizados e dinâmicos, e contando com profissionais
+                                                        qualificados,
+                                                        consigo
+                                                        alcançar meus objetivos e continuo motivado para treinar!
+
+                                                        Academia sem frescura… onde podemos treinar de verdade!!!"
+                                                    </p>
+                                                </div>
+                                                <div class="w3-center w3-margin-bottom w3-margin-top">
+                                                    <i class='bx bxs-star mtr-text-yellow'></i>
+                                                    <i class='bx bxs-star mtr-text-yellow'></i>
+                                                    <i class='bx bxs-star mtr-text-yellow'></i>
+                                                    <i class='bx bxs-star mtr-text-yellow'></i>
+                                                    <i class='bx bxs-star-half mtr-text-yellow'></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next mtr-swiper-depoimentos-next"></div>
+                    <div class="swiper-button-prev mtr-swiper-depoimentos-prev"></div>
+                </div>
+            </div>
+        </section>
+        <!-- Section: Planos -->
+        <section id="planos">
+            <div class="w3-container mtr-bg mtr-bg-primary-main">
+                <div class="w3-row-padding w3-padding w3-padding-32">
+                    <div class="w3-auto">
+                        <div class="w3-half w3-padding-16">
+                            <div class="mtr-balao">
+                                <span id="typewriter" style="display: none;">
+                                    Fala frangão! Agora que já conheçeu
+                                    a maior e melhor gym da região,
+                                    bora encher essa carcaça aí!? Rola pra
+                                    baixo e escolhe um plano!
+                                </span>
+                            </div>
+                        </div>
+                        <div class="w3-half w3-padding-16">
+                            <img src="assets/img/remove-bg/mtr-hulk-2.png" alt="Hulk" class="w3-image w3-padding-large">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="w3-container mtr-bg mtr-bg-primary">
+                <div class="w3-row-padding w3-padding w3-padding-32">
+                    <div class="w3-auto">
+                        <div class="swiper mtr-swiper-planos">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide mtr-auto w3-padding-16">
+                                    <div class="w3-padding-32">
+                                        <div class="w3-card-4 mtr-card-effect" style="margin: 4px;">
+                                            <div class="w3-container mtr-bg-secondary">
+                                                <h5 class="mtr-text-orange-light mtr-font-titulo w3-margin-top">
+                                                    Anual
+                                                </h5>
+                                                <p>
+                                                    R$ <span class="mtr-font-titulo w3-xxlarge">65,00</span>
+                                                    <br>
+                                                    por mês
+                                                </p>
+                                                <sub class="w3-opacity">
+                                                    ou R$ 780,00 à vista
+                                                </sub>
+                                                <hr class="w3-opacity">
+                                                <ul class="w3-margin-bottom">
+                                                    <li><i class='bx bxs-check-circle mtr-icon-plano'></i> Boleto
+                                                        bancário
+                                                    </li>
+                                                    <li><i class='bx bxs-check-circle mtr-icon-plano'></i> Transferência
+                                                    </li>
+                                                    <li><i class='bx bxs-check-circle mtr-icon-plano'></i> Pix</li>
+                                                    <li><i class='bx bxs-check-circle mtr-icon-plano'></i> Cartão de
+                                                        débito
+                                                    </li>
+                                                    <li><i class='bx bxs-check-circle mtr-icon-plano'></i> Dinheiro</li>
+                                                </ul>
+                                            </div>
+                                            <div class="w3-container mtr-bg-tertiary">
+                                                <div class="mtr-flex">
+                                                    <a target="_blank"
+                                                        href="https://api.whatsapp.com/send?phone=5547991745629&text=Ol%C3%A1%2C%20sou%20visitante%20do%20website%3A%20www.mtracademia.com.br%20e%20tenho%20interesse%20em%20contratar%20o%20plano%20Anual"
+                                                        class="w3-button mtr-orange-light w3-padding-large w3-margin-top w3-margin-bottom mtr-flex">
+                                                        Tenho interesse
+                                                        <i class='bx bx-right-arrow-alt' style="margin-left: 4px;"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide mtr-auto w3-padding-16">
+                                    <div class="w3-padding-32">
+                                        <div class="w3-card-4 mtr-card-effect" style="margin: 4px;">
+                                            <div class="w3-container mtr-bg-secondary">
+                                                <h5 class="mtr-text-orange-light mtr-font-titulo w3-margin-top">
+                                                    Semestral
+                                                </h5>
+                                                <p>
+                                                    R$ <span class="mtr-font-titulo w3-xxlarge">75,00</span>
+                                                    <br>
+                                                    por mês
+                                                </p>
+                                                <sub class="w3-opacity">
+                                                    ou R$ 450,00 à vista
+                                                </sub>
+                                                <hr class="w3-opacity">
+                                                <ul class="w3-margin-bottom">
+                                                    <li><i class='bx bxs-check-circle mtr-icon-plano'></i> Boleto
+                                                        bancário
+                                                    </li>
+                                                    <li><i class='bx bxs-check-circle mtr-icon-plano'></i> Transferência
+                                                    </li>
+                                                    <li><i class='bx bxs-check-circle mtr-icon-plano'></i> Pix</li>
+                                                    <li><i class='bx bxs-check-circle mtr-icon-plano'></i> Cartão de
+                                                        débito
+                                                    </li>
+                                                    <li><i class='bx bxs-check-circle mtr-icon-plano'></i> Dinheiro</li>
+                                                </ul>
+                                            </div>
+                                            <div class="w3-container mtr-bg-tertiary">
+                                                <div class="mtr-flex">
+                                                    <a target="_blank"
+                                                        href="https://api.whatsapp.com/send?phone=5547991745629&text=Ol%C3%A1%2C%20sou%20visitante%20do%20website%3A%20www.mtracademia.com.br%20e%20tenho%20interesse%20em%20contratar%20o%20plano%20Semestral"
+                                                        class="w3-button mtr-orange-light w3-padding-large w3-margin-top w3-margin-bottom mtr-flex">
+                                                        Tenho interesse
+                                                        <i class='bx bx-right-arrow-alt' style="margin-left: 4px;"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide mtr-auto w3-padding-16">
+                                    <div class="w3-padding-32">
+                                        <div class="w3-card-4 mtr-card-effect" style="margin: 4px;">
+                                            <div class="w3-container mtr-bg-secondary">
+                                                <h5 class="mtr-text-orange-light mtr-font-titulo w3-margin-top">
+                                                    Trimestral
+                                                </h5>
+                                                <p>
+                                                    R$ <span class="mtr-font-titulo w3-xxlarge">80,00</span>
+                                                    <br>
+                                                    por mês
+                                                </p>
+                                                <sub class="w3-opacity">
+                                                    ou R$ 240,00 à vista
+                                                </sub>
+                                                <hr class="w3-opacity">
+                                                <ul class="w3-margin-bottom">
+                                                    <li><i class='bx bxs-check-circle mtr-icon-plano'></i> Boleto
+                                                        bancário
+                                                    </li>
+                                                    <li><i class='bx bxs-check-circle mtr-icon-plano'></i> Transferência
+                                                    </li>
+                                                    <li><i class='bx bxs-check-circle mtr-icon-plano'></i> Pix</li>
+                                                    <li><i class='bx bxs-check-circle mtr-icon-plano'></i> Cartão de
+                                                        débito
+                                                    </li>
+                                                    <li><i class='bx bxs-check-circle mtr-icon-plano'></i> Dinheiro</li>
+                                                </ul>
+                                            </div>
+                                            <div class="w3-container mtr-bg-tertiary">
+                                                <div class="mtr-flex">
+                                                    <a target="_blank"
+                                                        href="https://api.whatsapp.com/send?phone=5547991745629&text=Ol%C3%A1%2C%20sou%20visitante%20do%20website%3A%20www.mtracademia.com.br%20e%20tenho%20interesse%20em%20contratar%20o%20plano%20Trimestral"
+                                                        class="w3-button mtr-orange-light w3-padding-large w3-margin-top w3-margin-bottom mtr-flex">
+                                                        Tenho interesse
+                                                        <i class='bx bx-right-arrow-alt' style="margin-left: 4px;"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide mtr-auto w3-padding-16">
+                                    <div class="w3-padding-32">
+                                        <div class="w3-card-4 mtr-card-effect" style="margin: 4px;">
+                                            <div class="w3-container mtr-bg-secondary">
+                                                <h5 class="mtr-text-orange-light mtr-font-titulo w3-margin-top">
+                                                    Mensal
+                                                </h5>
+                                                <p>
+                                                    R$ <span class="mtr-font-titulo w3-xxlarge">99,00</span>
+                                                    <br>
+                                                    por mês
+                                                </p>
+                                                <sub class="w3-opacity">
+                                                    somente à vista
+                                                </sub>
+                                                <hr class="w3-opacity">
+                                                <ul class="w3-margin-bottom">
+                                                    <li><i class='bx bxs-check-circle mtr-icon-plano'></i> Boleto
+                                                        bancário
+                                                    </li>
+                                                    <li><i class='bx bxs-check-circle mtr-icon-plano'></i> Transferência
+                                                    </li>
+                                                    <li><i class='bx bxs-check-circle mtr-icon-plano'></i> Pix</li>
+                                                    <li><i class='bx bxs-check-circle mtr-icon-plano'></i> Cartão de
+                                                        débito
+                                                    </li>
+                                                    <li><i class='bx bxs-check-circle mtr-icon-plano'></i> Dinheiro</li>
+                                                </ul>
+                                            </div>
+                                            <div class="w3-container mtr-bg-tertiary">
+                                                <div class="mtr-flex">
+                                                    <a target="_blank"
+                                                        href="https://api.whatsapp.com/send?phone=5547991745629&text=Ol%C3%A1%2C%20sou%20visitante%20do%20website%3A%20www.mtracademia.com.br%20e%20tenho%20interesse%20em%20contratar%20o%20plano%20Mensal"
+                                                        class="w3-button mtr-orange-light w3-padding-large w3-margin-top w3-margin-bottom mtr-flex">
+                                                        Tenho interesse
+                                                        <i class='bx bx-right-arrow-alt' style="margin-left: 4px;"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next mtr-swiper-planos-next"></div>
+                    <div class="swiper-button-prev mtr-swiper-planos-prev"></div>
+                </div>
+            </div>
+        </section>
+        <div class="w3-container mtr-bg-striped">
+        </div>
+        <!-- Footer -->
+        <footer>
+            <div class="w3-container mtr-bg mtr-bg-primary-main">
+                <div class="w3-row-padding w3-padding w3-padding-64">
+                    <div class="w3-auto">
+                        <div class="w3-twothird">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3548.1708163928897!2d-49.63946828438295!3d-27.213786312383668!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dfb9a27f6c8dfd%3A0xbacbd4dee6d6a6!2sMtr%20Academia!5e0!3m2!1spt-BR!2sbr!4v1641076474935!5m2!1spt-BR!2sbr"
+                                width="100%" height="420px" style="border:0;" allowfullscreen=""
+                                loading="lazy"></iframe>
+                        </div>
+                        <div class="w3-third">
+                            <div class="w3-padding">
+                                <h5 class="mtr-font-titulo mtr-text-orange-light"><strong>Endereço</strong></h5>
+                                <p>
+                                    Av. Oscar Barcelos, 1440 - Centro,
+                                    <br>
+                                    Rio do Sul - SC, 89160-314
+                                </p>
+                            </div>
+                            <div class="w3-padding">
+                                <h5 class="mtr-font-titulo mtr-text-orange-light"><strong>Contato</strong></h5>
+                                <p>
+                                    E-mail: mtracademia@gmail.com
+                                    <br>
+                                    Telefone: +55 47 99174-5629
+                                </p>
+                            </div>
+                            <div class="w3-padding">
+                                <h5 class="mtr-font-titulo mtr-text-orange-light"><strong>Horários</strong></h5>
+                                <p>
+                                    Segunda à Quinta: 06h às 24h
+                                    <br>
+                                    Sexta: 06h às 22h
+                                    <br>
+                                    Sábado: 15h às 18h
+                                    <br>
+                                    Domingo: 08:30h às 10:30h
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="w3-row-padding w3-padding w3-center">
+                    <hr class="w3-opacity">
+                    <p>
+                        © 2022 Mtr Academia. Todos os direitos reservados.
+                    </p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- Scripts -->
+    <script src="https://unpkg.com/boxicons@2.1.1/dist/boxicons.js"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/purecounter.js" async></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
