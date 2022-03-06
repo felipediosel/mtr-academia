@@ -10,23 +10,23 @@
 }
 
 :root{
-    --mtr-white: #EADEDA;
+    --mtr-white: rgb(225, 225, 230);
     --mtr-black: #000;
 
     --mtr-color-orange: #B04227;
-    --mtr-color-orange-light: #C2492B;
+    --mtr-color-orange-light: #cd411d;
     --mtr-color-orange-dark: #A03C23; 
 
     --mtr-color-yellow: #F9C22E;
     --mtr-color-blue: #1c2331;
-    --mtr-color-purple: #1e1a27;
+    --mtr-color-purple: rgb(11, 10, 16);
     --mtr-color-dark: #181818;
 
-    --mtr-color-grey: #262730;
+    --mtr-color-grey: rgb(18, 18, 20);
 
     --mtr-opacity: 0.8;
 
-    --mtr-gradient: radial-gradient(circle, #1e1a27, #1e1c29, #1e1d2b, #1d1f2d, #1d212f, #1e2230, #1e2330, #1f2431, #212531, #232530, #242630, #262730);
+    --mtr-gradient: radial-gradient(circle, #17141f, #16141c, #14131a, #131317, #121214);
     --mtr-gradient-opacity: linear-gradient(to right top, rgba(0, 0, 0, var(--mtr-opacity)), rgba(13, 8, 11, var(--mtr-opacity)), rgba(21, 16, 20, var(--mtr-opacity)), rgba(25, 22, 28, var(--mtr-opacity)), rgba(28, 27, 37, var(--mtr-opacity)), rgba(28, 27, 37, var(--mtr-opacity)), rgba(28, 27, 37, var(--mtr-opacity)), rgba(28, 27, 37, var(--mtr-opacity)), rgba(25, 22, 28, var(--mtr-opacity)), rgba(21, 16, 20, var(--mtr-opacity)), rgba(13, 8, 11, var(--mtr-opacity)), rgba(0, 0, 0, var(--mtr-opacity)));
 
     --swiper-theme-color: var(--mtr-color-orange-light);
@@ -127,7 +127,7 @@ body, html {
 }
 
 .mtr-loader div:nth-child(3){
-    background-color: var(--mtr-color-orange);
+    background-color: var(--mtr-color-orange-light);
     animation-delay: 0s;
 }
 
@@ -168,6 +168,7 @@ body, html {
 .mtr-sidebar{
     display: none;
     z-index: 3;
+    right:0;
 }
 
 .mtr-flex{
@@ -207,7 +208,7 @@ body, html {
 }
 
 .mtr-bg-side{
-    background-color: var(--mtr-color-dark);
+    background-color: var(--mtr-color-grey);
     height: 100vh;
 }
 
@@ -239,11 +240,11 @@ body, html {
 }
 
 .mtr-bg-primary{
-    background-color: var(--mtr-color-dark);
+    background-image: linear-gradient(270deg, rgb(9, 9, 10), rgb(18, 18, 20));
 }
 
 .mtr-bg-primary-main{
-    background-color: var(--mtr-color-purple);
+    background-image: linear-gradient(270deg, rgb(11, 10, 16), rgb(23, 20, 31));
 }
 
 .mtr-bg-secondary{
@@ -251,10 +252,6 @@ body, html {
 }
 
 .mtr-bg-tertiary{
-    background-color: var(--mtr-color-blue);
-}
-
-.mtr-bg-quartieri{
     background-color: var(--mtr-color-grey);
 }
 
@@ -329,7 +326,7 @@ body.compensate-for-scrollbar {
 }
 
 .mtr-nav-sticky{
-    background-color: var(--mtr-color-dark);
+    background-color: var(--mtr-color-grey);
     transition: 0.6s;
 }
 
@@ -350,11 +347,11 @@ body.compensate-for-scrollbar {
 }
 
 .mtr-card-img{
-    margin-top: -6rem;
+    /*margin-top: -6rem;*/
 }
 
 .mtr-card-img-mini{
-    margin-top: -4rem;
+    /*margin-top: -4rem;*/
 }
 
 .mtr-balao{
@@ -382,6 +379,12 @@ body.compensate-for-scrollbar {
 }
 
 .mtr-card-effect{
+    overflow: hidden;
+    border-radius: 8px;
+    border-color: rgb(41, 41, 46);
+    border-style: solid;
+    border-width: 1.5px;
+    margin: 5px;
     transition: all 0.35s ease;
 }
 
@@ -422,4 +425,8 @@ body.compensate-for-scrollbar {
 .mtr-auto{
     width: auto; 
     height: auto;
+}
+
+.w3-button{
+    border-radius: 8px;
 }

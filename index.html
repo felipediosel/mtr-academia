@@ -23,7 +23,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap">
-    <link rel='stylesheet' href='assets/css/main.css'>
+    <link rel='stylesheet' href='assets/css/main.css?v=1'>
 
     <!-- Links: Ícone -->
     <link rel="shortcut icon" type="image/x-png" href="assets/img/logos/mtr-logo-2.png">
@@ -41,7 +41,8 @@
         <nav class="w3-bar mtr-flex mtr-flex-space" id="mtrNavbar">
             <!-- Navbar: Logo -->
             <a href="" class="w3-bar-item w3-button mtr-transition" id="mtrLogo">
-                <img src="assets/img/logos/mtr-logo.png" class="mtr-logo mtr-transition" alt="Logo" id="mtrImgLogo" loading="lazy">
+                <img src="assets/img/logos/mtr-logo.png" class="mtr-logo mtr-transition" alt="Logo" id="mtrImgLogo"
+                    loading="lazy">
             </a>
             <div class="w3-bar-item w3-large mtr-transition" style="padding: 16px;" id="mtrSocial">
                 <a target="_blank" href="https://www.facebook.com/mtracademia">
@@ -61,14 +62,14 @@
             <!-- Sidebar: Menu -->
             <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right mtr-transition" id="mtrMenu"
                 onclick="MtrSidebar.open()">
-                <i class='bx bx-menu bx-md mtr-transition' id="mtrIconMenu"></i>
+                <i class='bx bx-menu-alt-right bx-md mtr-transition' id="mtrIconMenu"></i>
             </a>
         </nav>
     </div>
     <!-- Sidebar -->
-    <aside id="mtrSidebar" class="w3-sidebar w3-bar-block w3-card w3-animate-left mtr-sidebar mtr-bg-side">
+    <aside id="mtrSidebar" class="w3-sidebar w3-bar-block w3-card w3-animate-right mtr-sidebar mtr-bg-side">
         <a href="javascript:void(0)" onclick="MtrSidebar.close()" class="w3-bar-item w3-button w3-large w3-padding-16">
-            <i class='bx bx-x bx-md bx-tada mtr-text-yellow'></i>
+            <i class='bx bx-x bx-sm bx-tada mtr-text-yellow'></i>
         </a>
         <a href="#sobre" onclick="MtrSidebar.close()" class="w3-bar-item w3-button">
             <div class="mtr-flex mtr-flex-start">
@@ -172,11 +173,11 @@
             </p>
         </div>
     </header>
-    <div style="position: relative;">
+    <!--<div style="position: relative;">
         <svg class="mtr-bg-header-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 100">
             <path fill="var(--mtr-color-purple)" fill-opacity="1" d="M0,96L1440,0L1440,100L0,100Z"></path>
         </svg>
-    </div>
+    </div>-->
     <div class="mtr-content">
         <!-- Section: Sobre -->
         <section id="sobre">
@@ -186,7 +187,7 @@
                     <div class="w3-auto mtr-flex mtr-flex-space">
                         <div class="w3-half">
                             <h3 class="mtr-flex mtr-flex-start mtr-font-titulo mtr-text-yellow w3-xxlarge">
-                                Quem somos
+                                Quem somos?
                             </h3>
                             <h6 class="w3-padding-16">Somos uma academia fora dos padrões, voltada para o público
                                 maromba e
@@ -213,97 +214,116 @@
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
                                 <a href="assets/img/galeria/IMG_0888.jpg" class="fancybox" data-fancybox="gallery">
-                                    <img src="assets/img/galeria/IMG_0888.jpg" class="w3-card-4 w3-round-large" loading="lazy">
+                                    <img src="assets/img/galeria/IMG_0888.jpg" class="w3-card-4 w3-round-large"
+                                        loading="lazy">
                                 </a>
                             </div>
                             <div class="swiper-slide">
                                 <a href="assets/img/galeria/IMG_2452.jpg" class="fancybox" data-fancybox="gallery">
-                                    <img src="assets/img/galeria/IMG_2452.jpg" class="w3-card-4 w3-round-large" loading="lazy">
+                                    <img src="assets/img/galeria/IMG_2452.jpg" class="w3-card-4 w3-round-large"
+                                        loading="lazy">
                                 </a>
                             </div>
                             <div class="swiper-slide">
                                 <a href="assets/img/galeria/IMG_2456.jpg" class="fancybox" data-fancybox="gallery">
-                                    <img src="assets/img/galeria/IMG_2456.jpg" class="w3-card-4 w3-round-large" loading="lazy">
+                                    <img src="assets/img/galeria/IMG_2456.jpg" class="w3-card-4 w3-round-large"
+                                        loading="lazy">
                                 </a>
                             </div>
                             <div class="swiper-slide">
                                 <a href="assets/img/galeria/IMG_0684.jpg" class="fancybox" data-fancybox="gallery">
-                                    <img src="assets/img/galeria/IMG_0684.jpg" class="w3-card-4 w3-round-large" loading="lazy">
+                                    <img src="assets/img/galeria/IMG_0684.jpg" class="w3-card-4 w3-round-large"
+                                        loading="lazy">
                                 </a>
                             </div>
                             <div class="swiper-slide">
                                 <a href="assets/img/galeria/IMG_2467.jpg" class="fancybox" data-fancybox="gallery">
-                                    <img src="assets/img/galeria/IMG_2467.jpg" class="w3-card-4 w3-round-large" loading="lazy">
+                                    <img src="assets/img/galeria/IMG_2467.jpg" class="w3-card-4 w3-round-large"
+                                        loading="lazy">
                                 </a>
                             </div>
                             <div class="swiper-slide">
                                 <a href="assets/img/galeria/IMG_2465.jpg" class="fancybox" data-fancybox="gallery">
-                                    <img src="assets/img/galeria/IMG_2465.jpg" class="w3-card-4 w3-round-large" loading="lazy">
+                                    <img src="assets/img/galeria/IMG_2465.jpg" class="w3-card-4 w3-round-large"
+                                        loading="lazy">
                                 </a>
                             </div>
                             <div class="swiper-slide">
                                 <a href="assets/img/galeria/IMG_0721.jpg" class="fancybox" data-fancybox="gallery">
-                                    <img src="assets/img/galeria/IMG_0721.jpg" class="w3-card-4 w3-round-large" loading="lazy">
+                                    <img src="assets/img/galeria/IMG_0721.jpg" class="w3-card-4 w3-round-large"
+                                        loading="lazy">
                                 </a>
                             </div>
                             <div class="swiper-slide">
                                 <a href="assets/img/galeria/IMG_2443.jpg" class="fancybox" data-fancybox="gallery">
-                                    <img src="assets/img/galeria/IMG_2443.jpg" class="w3-card-4 w3-round-large" loading="lazy">
+                                    <img src="assets/img/galeria/IMG_2443.jpg" class="w3-card-4 w3-round-large"
+                                        loading="lazy">
                                 </a>
                             </div>
                             <div class="swiper-slide">
                                 <a href="assets/img/galeria/IMG_2446.jpg" class="fancybox" data-fancybox="gallery">
-                                    <img src="assets/img/galeria/IMG_2446.jpg" class="w3-card-4 w3-round-large" loading="lazy">
+                                    <img src="assets/img/galeria/IMG_2446.jpg" class="w3-card-4 w3-round-large"
+                                        loading="lazy">
                                 </a>
                             </div>
                             <div class="swiper-slide">
                                 <a href="assets/img/galeria/IMG_1076.jpg" class="fancybox" data-fancybox="gallery">
-                                    <img src="assets/img/galeria/IMG_1076.jpg" class="w3-card-4 w3-round-large" loading="lazy">
+                                    <img src="assets/img/galeria/IMG_1076.jpg" class="w3-card-4 w3-round-large"
+                                        loading="lazy">
                                 </a>
                             </div>
                             <div class="swiper-slide">
                                 <a href="assets/img/galeria/IMG_2460.jpg" class="fancybox" data-fancybox="gallery">
-                                    <img src="assets/img/galeria/IMG_2460.jpg" class="w3-card-4 w3-round-large" loading="lazy">
+                                    <img src="assets/img/galeria/IMG_2460.jpg" class="w3-card-4 w3-round-large"
+                                        loading="lazy">
                                 </a>
                             </div>
                             <div class="swiper-slide">
                                 <a href="assets/img/galeria/IMG_2498.jpg" class="fancybox" data-fancybox="gallery">
-                                    <img src="assets/img/galeria/IMG_2498.jpg" class="w3-card-4 w3-round-large" loading="lazy">
+                                    <img src="assets/img/galeria/IMG_2498.jpg" class="w3-card-4 w3-round-large"
+                                        loading="lazy">
                                 </a>
                             </div>
                             <div class="swiper-slide">
                                 <a href="assets/img/galeria/IMG_0753.jpg" class="fancybox" data-fancybox="gallery">
-                                    <img src="assets/img/galeria/IMG_0753.jpg" class="w3-card-4 w3-round-large" loading="lazy">
+                                    <img src="assets/img/galeria/IMG_0753.jpg" class="w3-card-4 w3-round-large"
+                                        loading="lazy">
                                 </a>
                             </div>
                             <div class="swiper-slide">
                                 <a href="assets/img/galeria/IMG_2509.jpg" class="fancybox" data-fancybox="gallery">
-                                    <img src="assets/img/galeria/IMG_2509.jpg" class="w3-card-4 w3-round-large" loading="lazy">
+                                    <img src="assets/img/galeria/IMG_2509.jpg" class="w3-card-4 w3-round-large"
+                                        loading="lazy">
                                 </a>
                             </div>
                             <div class="swiper-slide">
                                 <a href="assets/img/galeria/IMG_2513.jpg" class="fancybox" data-fancybox="gallery">
-                                    <img src="assets/img/galeria/IMG_2513.jpg" class="w3-card-4 w3-round-large" loading="lazy">
+                                    <img src="assets/img/galeria/IMG_2513.jpg" class="w3-card-4 w3-round-large"
+                                        loading="lazy">
                                 </a>
                             </div>
                             <div class="swiper-slide">
                                 <a href="assets/img/galeria/IMG_0947.jpg" class="fancybox" data-fancybox="gallery">
-                                    <img src="assets/img/galeria/IMG_0947.jpg" class="w3-card-4 w3-round-large" loading="lazy">
+                                    <img src="assets/img/galeria/IMG_0947.jpg" class="w3-card-4 w3-round-large"
+                                        loading="lazy">
                                 </a>
                             </div>
                             <div class="swiper-slide">
                                 <a href="assets/img/galeria/IMG_2489.jpg" class="fancybox" data-fancybox="gallery">
-                                    <img src="assets/img/galeria/IMG_2489.jpg" class="w3-card-4 w3-round-large" loading="lazy">
+                                    <img src="assets/img/galeria/IMG_2489.jpg" class="w3-card-4 w3-round-large"
+                                        loading="lazy">
                                 </a>
                             </div>
                             <div class="swiper-slide">
                                 <a href="assets/img/galeria/IMG_2478.jpg" class="fancybox" data-fancybox="gallery">
-                                    <img src="assets/img/galeria/IMG_2478.jpg" class="w3-card-4 w3-round-large" loading="lazy">
+                                    <img src="assets/img/galeria/IMG_2478.jpg" class="w3-card-4 w3-round-large"
+                                        loading="lazy">
                                 </a>
                             </div>
                             <div class="swiper-slide">
                                 <a href="assets/img/galeria/IMG_2568.jpg" class="fancybox" data-fancybox="gallery">
-                                    <img src="assets/img/galeria/IMG_2568.jpg" class="w3-card-4 w3-round-large" loading="lazy">
+                                    <img src="assets/img/galeria/IMG_2568.jpg" class="w3-card-4 w3-round-large"
+                                        loading="lazy">
                                 </a>
                             </div>
                         </div>
@@ -314,12 +334,15 @@
                     <div class="w3-auto mtr-flex mtr-flex-space">
                         <div class="w3-half">
                             <h3 class="mtr-flex mtr-flex-start mtr-font-titulo mtr-text-yellow w3-xxlarge">
-                                Unidade Centro
+                                Um ambiente fenomenal para inspirar seu treino.
                             </h3>
                             <h6 class="w3-padding-16">Uma estrutura completa pra quem gosta de treinar de verdade, sem
                                 frescura, sem aparelhos
                                 modernos, somente pura brutalidade. Você vai se supreender com a energia dessa casa,
                                 simplesmente não vai mais querer treinar em outro lugar.
+                                <br>
+                                <br>
+                                Abra a galeria e veja nossas fotos.
                             </h6>
                         </div>
                         <div class="w3-half mtr-flex">
@@ -390,12 +413,12 @@
                 <div class="w3-row-padding w3-padding w3-padding-32">
                     <div class="w3-auto mtr-flex mtr-flex-space">
                         <div class="w3-half w3-center w3-padding">
-                            <img src="assets/img/remove-bg/mtr-shaker.png" alt="Pré Treino"
-                                class="w3-image mtr-reflexo" loading="lazy">
+                            <img src="assets/img/remove-bg/mtr-shaker.png" alt="Pré Treino" class="w3-image"
+                                loading="lazy">
                         </div>
                         <div class="w3-half">
                             <h3 class="mtr-flex mtr-flex-start mtr-font-titulo mtr-text-yellow w3-xxlarge">
-                                Pré Treino
+                                Saiba como realizar sua refeição antes do treino.
                             </h3>
                             <h6 class="w3-padding-16">
                                 <i class='bx bxs-quote-left bx-sm'></i> "Caso a refeição for feita pouco tempo antes do
@@ -413,7 +436,7 @@
                     <div class="w3-auto mtr-flex mtr-flex-space">
                         <div class="w3-half">
                             <h3 class="mtr-flex mtr-flex-start mtr-font-titulo mtr-text-yellow w3-xxlarge">
-                                Pós Treino
+                                A importância da refeição após o treino.
                             </h3>
                             <h6 class="w3-padding-16">
                                 <i class='bx bxs-quote-left bx-sm'></i> "A alimentação pós treino é de extrema
@@ -426,7 +449,8 @@
                             </h6>
                         </div>
                         <div class="w3-half w3-center w3-padding">
-                            <img src="assets/img/remove-bg/mtr-food.png" alt="Pós Treino" class="w3-image" loading="lazy">
+                            <img src="assets/img/remove-bg/mtr-food.png" alt="Pós Treino" class="w3-image"
+                                loading="lazy">
                         </div>
                     </div>
                 </div>
@@ -435,7 +459,8 @@
                 <div class="w3-row-padding w3-padding w3-padding-16">
                     <div class="w3-auto mtr-flex mtr-flex-space">
                         <div class="w3-third w3-padding w3-center">
-                            <img src="assets/img/perfil/mtr-testoni.png" alt="Lucas Testoni" class="w3-image w3-circle" loading="lazy">
+                            <img src="assets/img/perfil/mtr-testoni.png" alt="Lucas Testoni" class="w3-image w3-circle"
+                                loading="lazy">
                         </div>
                         <div class="w3-third w3-padding-16">
                             <h5 class="mtr-text-orange-light mtr-font-titulo">Lucas Testoni</h5>
@@ -474,7 +499,7 @@
                     <div class="w3-auto mtr-flex mtr-flex-space">
                         <div class="w3-half">
                             <h3 class="mtr-flex mtr-flex-start mtr-font-titulo mtr-text-yellow w3-xxlarge">
-                                Hipertrofia
+                                O segredo para a construção de massa muscular.
                             </h3>
                             <h6 class="w3-padding-16">
                                 <i class='bx bxs-quote-left bx-sm'></i> "Técnica + Carga + Amplitude de movimento, as
@@ -488,20 +513,20 @@
                             </h6>
                         </div>
                         <div class="w3-half w3-center w3-padding">
-                            <img src="assets/img/remove-bg/mtr-hipertrofia.png" alt="Hipertrofia"
-                                class="w3-image mtr-reflexo" loading="lazy">
+                            <img src="assets/img/remove-bg/mtr-hipertrofia.png" alt="Hipertrofia" class="w3-image"
+                                loading="lazy">
                         </div>
                     </div>
                 </div>
                 <div class="w3-row-padding w3-padding w3-padding-32">
                     <div class="w3-auto mtr-flex mtr-flex-space">
                         <div class="w3-half w3-center w3-padding">
-                            <img src="assets/img/remove-bg/mtr-emagrecimento.png" alt="Emagrecimento"
-                                class="w3-image mtr-reflexo" loading="lazy">
+                            <img src="assets/img/remove-bg/mtr-emagrecimento.png" alt="Emagrecimento" class="w3-image"
+                                loading="lazy">
                         </div>
                         <div class="w3-half">
                             <h3 class="mtr-flex mtr-flex-start mtr-font-titulo mtr-text-yellow w3-xxlarge">
-                                Emagrecimento
+                                Saiba como emagrecer de forma saudável.
                             </h3>
                             <h6 class="w3-padding-16">
                                 <i class='bx bxs-quote-left bx-sm'></i> "Um dos maiores erros é focar somente no
@@ -520,8 +545,12 @@
             <div class="w3-container mtr-bg mtr-bg-secondary">
                 <div class="w3-row-padding w3-padding w3-padding-16">
                     <div class="w3-auto mtr-flex mtr-flex-space">
+                        <div class="w3-third w3-padding w3-center">
+                            <img src="assets/img/perfil/ruan-bolacha.png" alt="Ruan Bolacha" class="w3-image w3-circle"
+                                loading="lazy">
+                        </div>
                         <div class="w3-third w3-padding-16">
-                            <h5 class="mtr-text-orange-light mtr-font-titulo">Ruan "Bolacha"</h5>
+                            <h5 class="mtr-text-orange-light mtr-font-titulo">Ruan "Bolacha" Batschauer</h5>
                             <p class="w3-opacity">Fisiculturista</p>
                             <p class="w3-padding-16">
                                 Quer mais dicas como essas?
@@ -544,9 +573,6 @@
                                 <i class='bx bxl-whatsapp bx-sm bx-tada-hover'></i>
                             </a>
                         </div>
-                        <div class="w3-third w3-padding w3-center">
-                            <img src="assets/img/perfil/ruan-bolacha.png" alt="Ruan Bolacha" class="w3-image w3-circle" loading="lazy">
-                        </div>
                     </div>
                 </div>
             </div>
@@ -554,29 +580,26 @@
         <!-- Section: Equipe -->
         <section id="equipe">
             <div class="w3-container mtr-bg mtr-bg-primary">
-                <div class="w3-row-padding w3-padding w3-padding-32">
+                <div class="w3-row-padding w3-padding w3-padding-top-32">
                     <div class="w3-auto mtr-flex mtr-flex-space">
-                        <div class="w3-half">
+                        <div class="w3-third">
                             <h3 class="mtr-flex mtr-flex-start mtr-font-titulo mtr-text-yellow w3-xxlarge">
-                                Equipe
+                                Nosso time de especialistas espera por você.
                             </h3>
-                            <h6 class="w3-padding-16">
-                                Temos uma equipe motivada e muito bem preparada para te auxiliar em qual seja o seu
-                                objetivo: Hipertrofia, Emagrecimento, Saúde ou Resistência.
-                            </h6>
                         </div>
                     </div>
                 </div>
-                <div class="w3-row-padding w3-padding">
+                <div class="w3-row-padding w3-padding w3-padding-32">
                     <div class="w3-auto">
                         <div class="swiper mtr-swiper-equipe">
                             <div class="swiper-wrapper">
-                                <div class="swiper-slide mtr-auto w3-padding-64">
+                                <div class="swiper-slide mtr-auto w3-padding-16">
                                     <div class="w3-padding-32">
-                                        <div class="w3-card-4 mtr-card-effect" style="margin: 4px;">
+                                        <div class="w3-card-4 w3-round-large mtr-card-effect">
                                             <div class="mtr-bg-tertiary mtr-flex">
                                                 <img src="assets/img/equipe/mtr-gabriel.jpg" alt="Gabriel"
-                                                    class="w3-image w3-hover-greyscale w3-circle mtr-card-img w3-padding-large" loading="lazy">
+                                                    class="w3-image w3-hover-greyscale w3-circle mtr-card-img w3-padding-large"
+                                                    loading="lazy">
                                             </div>
                                             <div class="w3-container mtr-bg-secondary">
                                                 <h5
@@ -592,7 +615,6 @@
                                                         no período vespertino.
                                                     </p>
                                                 </div>
-                                                <hr class="w3-opacity">
                                                 <div class="w3-center w3-margin-bottom">
                                                     <a target="_blank"
                                                         href="https://www.facebook.com/gabriel.feldmann.9">
@@ -610,12 +632,13 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="swiper-slide mtr-auto w3-padding-64">
+                                <div class="swiper-slide mtr-auto w3-padding-16">
                                     <div class="w3-padding-32">
-                                        <div class="w3-card-4 mtr-card-effect" style="margin: 4px;">
+                                        <div class="w3-card-4 w3-round-large mtr-card-effect">
                                             <div class="mtr-bg-tertiary mtr-flex">
                                                 <img src="assets/img/equipe/mtr-ruan.jpg" alt="Ruan"
-                                                    class="w3-image w3-hover-greyscale w3-circle mtr-card-img w3-padding-large" loading="lazy">
+                                                    class="w3-image w3-hover-greyscale w3-circle mtr-card-img w3-padding-large"
+                                                    loading="lazy">
                                             </div>
                                             <div class="w3-container mtr-bg-secondary">
                                                 <h5
@@ -632,7 +655,6 @@
                                                         no período noturno.
                                                     </p>
                                                 </div>
-                                                <hr class="w3-opacity">
                                                 <div class="w3-center w3-margin-bottom">
                                                     <a target="_blank" href="https://www.facebook.com/bolachinha8">
                                                         <i class='bx bxl-facebook-square bx-sm bx-tada-hover'></i>
@@ -648,12 +670,13 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="swiper-slide mtr-auto w3-padding-64">
+                                <div class="swiper-slide mtr-auto w3-padding-16">
                                     <div class="w3-padding-32">
-                                        <div class="w3-card-4 mtr-card-effect" style="margin: 4px;">
+                                        <div class="w3-card-4 w3-round-large mtr-card-effect">
                                             <div class="mtr-bg-tertiary mtr-flex">
                                                 <img src="assets/img/equipe/mtr-dani.jpg" alt="Danieli"
-                                                    class="w3-image w3-hover-greyscale w3-circle mtr-card-img w3-padding-large" loading="lazy">
+                                                    class="w3-image w3-hover-greyscale w3-circle mtr-card-img w3-padding-large"
+                                                    loading="lazy">
                                             </div>
                                             <div class="w3-container mtr-bg-secondary">
                                                 <h5
@@ -671,7 +694,6 @@
                                                         período matutino.
                                                     </p>
                                                 </div>
-                                                <hr class="w3-opacity">
                                                 <div class="w3-center w3-margin-bottom">
                                                     <a target="_blank" href="https://www.facebook.com/daany.hedler">
                                                         <i class='bx bxl-facebook-square bx-sm bx-tada-hover'></i>
@@ -687,12 +709,13 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="swiper-slide mtr-auto w3-padding-64">
+                                <div class="swiper-slide mtr-auto w3-padding-16">
                                     <div class="w3-padding-32">
-                                        <div class="w3-card-4 mtr-card-effect" style="margin: 4px;">
+                                        <div class="w3-card-4 w3-round-large mtr-card-effect">
                                             <div class="mtr-bg-tertiary mtr-flex">
                                                 <img src="assets/img/equipe/mtr-cleison.jpg" alt="Cleison"
-                                                    class="w3-image w3-hover-greyscale w3-circle mtr-card-img w3-padding-large" loading="lazy">
+                                                    class="w3-image w3-hover-greyscale w3-circle mtr-card-img w3-padding-large"
+                                                    loading="lazy">
                                             </div>
                                             <div class="w3-container mtr-bg-secondary">
                                                 <h5
@@ -709,7 +732,6 @@
                                                         no período vespertino.
                                                     </p>
                                                 </div>
-                                                <hr class="w3-opacity">
                                                 <div class="w3-center w3-margin-bottom">
                                                     <a target="_blank"
                                                         href="https://www.facebook.com/CleisonHeadbanger">
@@ -726,12 +748,13 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="swiper-slide mtr-auto w3-padding-64">
+                                <div class="swiper-slide mtr-auto w3-padding-16">
                                     <div class="w3-padding-32">
-                                        <div class="w3-card-4 mtr-card-effect" style="margin: 4px;">
+                                        <div class="w3-card-4 w3-round-large mtr-card-effect">
                                             <div class="mtr-bg-tertiary mtr-flex">
                                                 <img src="assets/img/equipe/mtr-pietra.jpg" alt="Pietra"
-                                                    class="w3-image w3-hover-greyscale w3-circle mtr-card-img w3-padding-large" loading="lazy">
+                                                    class="w3-image w3-hover-greyscale w3-circle mtr-card-img w3-padding-large"
+                                                    loading="lazy">
                                             </div>
                                             <div class="w3-container mtr-bg-secondary">
                                                 <h5
@@ -747,7 +770,6 @@
                                                         no período noturno.
                                                     </p>
                                                 </div>
-                                                <hr class="w3-opacity">
                                                 <div class="w3-center w3-margin-bottom">
                                                     <a target="_blank" href="https://www.facebook.com/">
                                                         <i class='bx bxl-facebook-square bx-sm bx-tada-hover'></i>
@@ -818,16 +840,26 @@
         <!-- Section: Depoimentos -->
         <section id="depoimentos">
             <div class="w3-container mtr-bg mtr-bg-primary">
-                <div class="w3-row-padding w3-padding w3-padding-64">
+                <div class="w3-row-padding w3-padding w3-padding-top-32">
+                    <div class="w3-auto mtr-flex mtr-flex-space">
+                        <div class="w3-third">
+                            <h3 class="mtr-flex mtr-flex-start mtr-font-titulo mtr-text-yellow w3-xxlarge">
+                                Saiba a opnião de quem nos escolheu.
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="w3-row-padding w3-padding w3-padding-32">
                     <div class="w3-auto">
                         <div class="swiper mtr-swiper-depoimentos">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide mtr-auto w3-padding-16">
                                     <div class="w3-padding-32">
-                                        <div class="w3-card-4 mtr-card-effect" style="margin: 4px;">
+                                        <div class="w3-card-4 w3-round-large mtr-card-effect">
                                             <div class="mtr-bg-tertiary mtr-flex">
                                                 <img src="assets/img/perfil/mtr-juh.png" alt="Juh"
-                                                    class="w3-image w3-circle w3-padding-large w3-hover-greyscale mtr-card-img-mini" loading="lazy">
+                                                    class="w3-image w3-circle w3-padding-large w3-hover-greyscale mtr-card-img-mini"
+                                                    loading="lazy">
                                             </div>
                                             <div class="w3-container mtr-bg-secondary">
                                                 <h5
@@ -843,11 +875,8 @@
                                                         pessoas que ali estavam, algo que sempre me chama a atenção por
                                                         onde
                                                         quer
-                                                        que eu vá, pois onde somos bem recebidos queremos sempre voltar.
-                                                        ...Costumo
-                                                        dizer que ao subir as escadas da academia subi também em outras
-                                                        áreas da
-                                                        minha vida (corpo e mente em harmonia!)."
+                                                        que eu vá, pois onde somos bem recebidos queremos sempre
+                                                        voltar."
                                                     </p>
                                                 </div>
                                                 <div class="w3-center w3-margin-bottom w3-margin-top">
@@ -863,10 +892,11 @@
                                 </div>
                                 <div class="swiper-slide mtr-auto w3-padding-16">
                                     <div class="w3-padding-32">
-                                        <div class="w3-card-4 mtr-card-effect" style="margin: 4px;">
+                                        <div class="w3-card-4 w3-round-large mtr-card-effect">
                                             <div class="mtr-bg-tertiary mtr-flex">
                                                 <img src="assets/img/perfil/mtr-andre.png" alt="André"
-                                                    class="w3-image w3-circle w3-padding-large w3-hover-greyscale mtr-card-img-mini" loading="lazy">
+                                                    class="w3-image w3-circle w3-padding-large w3-hover-greyscale mtr-card-img-mini"
+                                                    loading="lazy">
                                             </div>
                                             <div class="w3-container mtr-bg-secondary">
                                                 <h5
@@ -882,14 +912,8 @@
                                                         objetivos
                                                         e depois de alcançados, encontrasse motivação para continuar
                                                         treinando. E
-                                                        foi aqui que encontrei! Com excelente atendimento, métodos de
-                                                        treinamento
-                                                        atualizados e dinâmicos, e contando com profissionais
-                                                        qualificados,
-                                                        consigo
-                                                        alcançar meus objetivos e continuo motivado para treinar!
-
-                                                        Academia sem frescura… onde podemos treinar de verdade!!!"
+                                                        foi aqui que encontrei! Academia sem frescura… onde podemos
+                                                        treinar de verdade!!!"
                                                     </p>
                                                 </div>
                                                 <div class="w3-center w3-margin-bottom w3-margin-top">
@@ -898,6 +922,39 @@
                                                     <i class='bx bxs-star mtr-text-yellow'></i>
                                                     <i class='bx bxs-star mtr-text-yellow'></i>
                                                     <i class='bx bxs-star-half mtr-text-yellow'></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide mtr-auto w3-padding-16">
+                                    <div class="w3-padding-32">
+                                        <div class="w3-card-4 w3-round-large mtr-card-effect">
+                                            <div class="mtr-bg-tertiary mtr-flex">
+                                                <img src="assets/img/perfil/mtr-diosel.png" alt="Felipe"
+                                                    class="w3-image w3-circle w3-padding-large w3-hover-greyscale mtr-card-img-mini"
+                                                    loading="lazy">
+                                            </div>
+                                            <div class="w3-container mtr-bg-secondary">
+                                                <h5
+                                                    class="mtr-text-orange-light mtr-font-titulo w3-margin-top w3-center">
+                                                    Felipe Diosel
+                                                </h5>
+                                                <p class="w3-opacity w3-center">Aluno</p>
+                                                <div class="mtr-card-text-mini">
+                                                    <p class="w3-padding-16">
+                                                        "Acompanhei a tragetória da MTR Academia desde o começo, e pude
+                                                        perceber a constante evolução da estrutura, sempre investindo
+                                                        pensando no aluno. Sou muito bem recebido e me sinto a vontade
+                                                        para treinar."
+                                                    </p>
+                                                </div>
+                                                <div class="w3-center w3-margin-bottom w3-margin-top">
+                                                    <i class='bx bxs-star mtr-text-yellow'></i>
+                                                    <i class='bx bxs-star mtr-text-yellow'></i>
+                                                    <i class='bx bxs-star mtr-text-yellow'></i>
+                                                    <i class='bx bxs-star mtr-text-yellow'></i>
+                                                    <i class='bx bxs-star mtr-text-yellow'></i>
                                                 </div>
                                             </div>
                                         </div>
@@ -927,19 +984,29 @@
                             </div>
                         </div>
                         <div class="w3-half w3-padding-16">
-                            <img src="assets/img/remove-bg/mtr-hulk-2.png" alt="Hulk" class="w3-image w3-padding-large" loading="lazy">
+                            <img src="assets/img/remove-bg/mtr-hulk-2.png" alt="Hulk" class="w3-image w3-padding-large"
+                                loading="lazy">
                         </div>
                     </div>
                 </div>
             </div>
             <div class="w3-container mtr-bg mtr-bg-primary">
+                <div class="w3-row-padding w3-padding w3-padding-top-32">
+                    <div class="w3-auto mtr-flex mtr-flex-space">
+                        <div class="w3-third">
+                            <h3 class="mtr-flex mtr-flex-start mtr-font-titulo mtr-text-yellow w3-xxlarge">
+                                Oferecemos planos com preço justo para você.
+                            </h3>
+                        </div>
+                    </div>
+                </div>
                 <div class="w3-row-padding w3-padding w3-padding-32">
                     <div class="w3-auto">
                         <div class="swiper mtr-swiper-planos">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide mtr-auto w3-padding-16">
                                     <div class="w3-padding-32">
-                                        <div class="w3-card-4 mtr-card-effect" style="margin: 4px;">
+                                        <div class="w3-card-4 w3-round-large mtr-card-effect">
                                             <div class="w3-container mtr-bg-secondary">
                                                 <h5 class="mtr-text-orange-light mtr-font-titulo w3-margin-top">
                                                     Anual
@@ -981,7 +1048,7 @@
                                 </div>
                                 <div class="swiper-slide mtr-auto w3-padding-16">
                                     <div class="w3-padding-32">
-                                        <div class="w3-card-4 mtr-card-effect" style="margin: 4px;">
+                                        <div class="w3-card-4 w3-round-large mtr-card-effect">
                                             <div class="w3-container mtr-bg-secondary">
                                                 <h5 class="mtr-text-orange-light mtr-font-titulo w3-margin-top">
                                                     Semestral
@@ -1023,7 +1090,7 @@
                                 </div>
                                 <div class="swiper-slide mtr-auto w3-padding-16">
                                     <div class="w3-padding-32">
-                                        <div class="w3-card-4 mtr-card-effect" style="margin: 4px;">
+                                        <div class="w3-card-4 w3-round-large mtr-card-effect">
                                             <div class="w3-container mtr-bg-secondary">
                                                 <h5 class="mtr-text-orange-light mtr-font-titulo w3-margin-top">
                                                     Trimestral
@@ -1065,7 +1132,7 @@
                                 </div>
                                 <div class="swiper-slide mtr-auto w3-padding-16">
                                     <div class="w3-padding-32">
-                                        <div class="w3-card-4 mtr-card-effect" style="margin: 4px;">
+                                        <div class="w3-card-4 w3-round-large mtr-card-effect">
                                             <div class="w3-container mtr-bg-secondary">
                                                 <h5 class="mtr-text-orange-light mtr-font-titulo w3-margin-top">
                                                     Mensal
@@ -1173,7 +1240,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/purecounter.js" async></script>
-    <script src="assets/js/main.js"></script>
+    <script src="assets/js/main.js?v=1"></script>
 </body>
 
 </html>

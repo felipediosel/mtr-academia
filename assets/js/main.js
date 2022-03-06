@@ -224,6 +224,6 @@ $(window).on('load', function () {
   MtrSwiper.coverflow(".mtr-swiper-gallery");
   MtrSwiper.responsive(".mtr-swiper-purecounter", 3);
   MtrSwiper.responsive(".mtr-swiper-equipe", 4);
-  MtrSwiper.responsive(".mtr-swiper-depoimentos", 2);
+  MtrSwiper.responsive(".mtr-swiper-depoimentos", 3);
   MtrSwiper.responsive(".mtr-swiper-planos", 4);
 });
