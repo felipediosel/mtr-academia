@@ -4,4 +4,4 @@ A relatively simple web page, created to meet the company's MTR Academia need to
 
 Uma página web relativamente simples, criada para atender a necessidade da empresa MTR Academia em ter um endereço onde os visitantes pudessem ver a história do negócio, fotos do estabelecimento, conhecer a equipe e os planos ofertados, além de horários de funcionamento e localização.
 
-Web address: www.mtracademi.com.br
+Web address: www.mtracademia.com.br
